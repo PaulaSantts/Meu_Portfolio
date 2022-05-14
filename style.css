@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(167, 118, 55);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+body {
+    width: 100%;
+    background: url(./pexels-pixabay-265020.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display:flex;        
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 100px;
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex;    
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: burlywood;
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    text-align: center;
+    padding: 100px;
+}
+
+.container .name h1 {
+    font-size: 80px;
+}
+
+.container .name h5 {
+    font-size: 40px;
+}
+
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width:600px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgb(189, 168, 140) 50%, rgb(167, 118, 55) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+    
+}
